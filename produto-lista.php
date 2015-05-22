@@ -18,6 +18,7 @@ foreach($produtos as $produto) :
         <td><?= $produto['nome'] ?></td>
         <td><?= $produto['preco'] ?></td>
         <td><?= substr ($produto['descricao'],0,40) ?></td>
+        <td><a class="btn btn-primary" href="produto-altera-formulario.php?id=<?=$produto['id']?>">alterar</a>
         <td><?= $produto['categoria_nome'] ?></td> 
         <td>
 
