@@ -5,9 +5,11 @@ include("banco-produto.php");
 
 $id = $_GET['id'];
 removeProduto($conexao, $id);
-?>
 
-<p class="text-success">Produto <?=$id?> removido!</p>
+header("Location: produto-lista.php?removido=true");
+die();
+
+?>
 
 <?php
 include("rodape.php");
